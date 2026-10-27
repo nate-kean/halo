@@ -49,6 +49,7 @@ setup(
     ],
     install_requires=dependencies("requirements.txt"),
     tests_require=dependencies("requirements-dev.txt"),
+    package_data={"halo": ["*.pyi", "py.typed"]},
     include_package_data=True,
     extras_require={
         "ipython": [
